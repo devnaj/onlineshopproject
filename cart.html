@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop - Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container">
+            <span class="navbar-brand">Shopping Cart</span>
+            <div>
+                <a href="index.html" class="btn btn-light btn-sm me-2">Continue Shopping</a>
+                <button onclick="logout()" class="btn btn-outline-light btn-sm">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3 class="mb-3">Your Cart</h3>
+        
+        <div class="card shadow">
+            <div class="card-body">
+                <!-- Cart Table -->
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartTableBody">
+                            <!-- Items will be put here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Empty Cart Message -->
+                <p id="emptyCartMsg" class="text-center text-muted my-3" style="display:none;">Your cart is empty.</p>
+                
+                <!-- Total Price -->
+                <div class="d-flex justify-content-end mt-3">
+                    <h4>Total: $<span id="totalPrice">0</span></h4>
+                </div>
+
+                <!-- CHECKOUT BUTTON (Updated to call window.checkout) -->
+                <button class="btn btn-success w-100 mt-3" onclick="window.checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

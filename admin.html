@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-dark mb-4">
+        <div class="container">
+            <span class="navbar-brand">Admin Panel</span>
+            <a href="index.html" class="btn btn-outline-light btn-sm">Go to Shop</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="text-center mb-3">Add New Product</h4>
+                        
+                        <form id="addProductForm">
+                            <div class="mb-3">
+                                <label class="form-label">Product Name</label>
+                                <input type="text" id="prodName" class="form-control" placeholder="e.g. Nike Shoes" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Price ($)</label>
+                                <input type="number" id="prodPrice" class="form-control" placeholder="e.g. 50" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Image URL</label>
+                                <input type="text" id="prodImg" class="form-control" placeholder="Paste an image link here" required>
+                                <small class="text-muted">Tip: Search Google Images, right-click > "Copy Image Link"</small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Description</label>
+                                <textarea id="prodDesc" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Add Product</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
