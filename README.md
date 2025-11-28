@@ -96,6 +96,12 @@ Delete Operation: Users can remove items from the cart (updates LocalStorage).
 
 Checkout: Clears the cart and simulates a purchase.
 
+Project Screenshots
+
+Home Page (Shop)
+
+Shopping Cart
+
 How to Run the Project
 
 Download the project folder.
