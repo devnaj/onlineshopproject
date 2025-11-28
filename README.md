@@ -100,7 +100,11 @@ Project Screenshots
 
 Home Page (Shop)
 
+<img src="home.png.png" alt="Screenshot of the main product listing page." width="600">
+
 Shopping Cart
+
+<img src="cart.png.png" alt="Screenshot of the shopping cart page with items and total price." width="600">
 
 How to Run the Project
 
